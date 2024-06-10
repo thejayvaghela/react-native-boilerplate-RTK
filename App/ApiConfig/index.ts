@@ -1,21 +1,8 @@
 import Config from 'react-native-config';
 
-const productionUrl = Config.API_URL!;
+const baseUrl = Config.API_URL!;
 
-const developmentUrl = Config.API_TEST_URL!;
-
-const ENVIRONMENT = {
-  PROD: 'PROD',
-  DEV: 'DEV',
-  STAGE: 'STAGE',
-};
-
-const currentEnv = Config.ENVIRONMENT ?? ENVIRONMENT.DEV;
-
-const baseUrl =
-  (currentEnv === ENVIRONMENT.PROD && productionUrl) || developmentUrl;
-
-const baseUrlApi = `${baseUrl}api/`;
+const baseUrlApi = `${baseUrl}/`;
 
 let ApiConfig = {
   baseUrl,
@@ -23,7 +10,7 @@ let ApiConfig = {
   token: null as string | null,
   login: `${baseUrlApi}login`,
   user: `${baseUrlApi}users`,
-  posts: `${developmentUrl}posts`,
+  posts: `${baseUrlApi}posts`,
 };
 
 export { ApiConfig };
