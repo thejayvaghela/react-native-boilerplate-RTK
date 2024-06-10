@@ -1,0 +1,20 @@
+{
+  "root": ".",
+  "base": "App",
+  "modules": [
+    "ApiConfig",
+    "AppContext",
+    "Slices/Default",
+    "Routes",
+    "Screens/Components",
+    "Screens/CommonComponent",
+    "Screens/SubComponents",
+    "Store",
+    "Theme",
+    "Services",
+    "Utils",
+    "Localization",
+    "Slices",
+    "Thunks"
+  ]
+}
