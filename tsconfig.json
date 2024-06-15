@@ -1,0 +1,118 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "./App/*"
+      ],
+      "redux": [
+        "./node_modules/redux"
+      ],
+      "@ApiConfig": [
+        "./App/ApiConfig/index"
+      ],
+      "@ApiConfig/*": [
+        "./App/ApiConfig/*"
+      ],
+      "@AppContext": [
+        "./App/AppContext/index"
+      ],
+      "@AppContext/*": [
+        "./App/AppContext/*"
+      ],
+      "@Default": [
+        "./App/Slices/Default/index"
+      ],
+      "@Default/*": [
+        "./App/Slices/Default/*"
+      ],
+      "@Routes": [
+        "./App/Routes/index"
+      ],
+      "@Routes/*": [
+        "./App/Routes/*"
+      ],
+      "@Components": [
+        "./App/Screens/Components/index"
+      ],
+      "@Components/*": [
+        "./App/Screens/Components/*"
+      ],
+      "@CommonComponent": [
+        "./App/Screens/CommonComponent/index"
+      ],
+      "@CommonComponent/*": [
+        "./App/Screens/CommonComponent/*"
+      ],
+      "@SubComponents": [
+        "./App/Screens/SubComponents/index"
+      ],
+      "@SubComponents/*": [
+        "./App/Screens/SubComponents/*"
+      ],
+      "@Store": [
+        "./App/Store/index"
+      ],
+      "@Store/*": [
+        "./App/Store/*"
+      ],
+      "@Theme": [
+        "./App/Theme/index"
+      ],
+      "@Theme/*": [
+        "./App/Theme/*"
+      ],
+      "@Services": [
+        "./App/Services/index"
+      ],
+      "@Services/*": [
+        "./App/Services/*"
+      ],
+      "@Utils": [
+        "./App/Utils/index"
+      ],
+      "@Utils/*": [
+        "./App/Utils/*"
+      ],
+      "@Localization": [
+        "./App/Localization/index"
+      ],
+      "@Localization/*": [
+        "./App/Localization/*"
+      ],
+      "@Slices": [
+        "./App/Slices/index"
+      ],
+      "@Slices/*": [
+        "./App/Slices/*"
+      ],
+      "@Thunks": [
+        "./App/Thunks/index"
+      ],
+      "@Thunks/*": [
+        "./App/Thunks/*"
+      ]
+    },
+    "allowJs": true,
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "isolatedModules": true,
+    "resolveJsonModule": true,
+    "jsx": "react-native",
+    "lib": [
+      "es2017"
+    ],
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "noEmit": true,
+    "strict": true,
+    "target": "esnext"
+  },
+  "exclude": [
+    "node_modules",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ],
+  "extends": "@react-native/typescript-config/tsconfig.json"
+}
